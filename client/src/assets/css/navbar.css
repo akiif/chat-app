@@ -1,0 +1,56 @@
+.navbar {
+  background-color: #0d6efd;
+  display: flex;
+  padding: 16px 40px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  margin-bottom: 10px;
+}
+
+.logo {
+  font-size: 2rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 200;
+  color: #fff;
+  font-family: 'McLaren', cursive;
+}
+
+.logo:hover,
+.logo:focus {
+  color: var(--hover-color);
+}
+
+
+.logo-img {
+  height: 23px;
+  width: 23px;
+  margin-right: 4px;
+  margin-top: 2.5px;
+}
+
+.navbar-elements {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Media Query for Smartphones */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 16px 20px;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .logo-img {
+    height: 16px;
+    width: 16px;
+  }
+}

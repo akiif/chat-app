@@ -1,0 +1,19 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "A chat-app built using Node.js, React and Socket.IO",
+  "scripts": {
+    "server-dev": "cd server && yarn dev",
+    "client-dev": "cd client && yarn dev --host",
+    "server": "cd server && yarn start",
+    "client": "cd client && yarn dev",
+    "start": "concurrently \"yarn server\" \"yarn client\"",
+    "dev": "concurrently \"yarn server-dev\" \"yarn client-dev\"",
+    "initialize-app": "concurrently \"cd server && yarn\" \"cd client && yarn\"" 
+  },
+  "author": "Akif Mohammed",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
